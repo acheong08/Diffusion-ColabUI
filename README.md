@@ -3,6 +3,9 @@ Fully functional Colab based on AUTOMATIC1111/stable-diffusion-webui with the le
 
 [![link](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PvNyEWIhDU_D-i15DzpPjqDQkbYv_6Hu?usp=sharing)
 
+# !! NOTICE !!
+My private server has been disabled for hosting pirated content. Please replace the url https://duti.tech/... with where ever you can find the zip file hosted
+
 ## Instructions
 Save and import the `.ipynb` on Google Colab and follow the instructions there
 
