@@ -12,4 +12,4 @@ If possible, perhaps there is a better way to get the NovelAI files. I currently
 
 ## Files
 - `NovelAI_Diffusion.ipynb` - For NovelAI (Original)
-- SD-NSFW_allowed.ipynb - For Stable Diffusion (By NOP)
+- `SD-NSFW_allowed.ipynb` - For Stable Diffusion (By NOP)
