@@ -5,13 +5,13 @@ Fully functional Colab based on AUTOMATIC1111/stable-diffusion-webui with the le
 
 ## Models supported
 - NovelAI
-- Stable Diffusion
+- Stable Diffusion (V1.4 and V1.5)
 - Waifu Diffusion
+- H Diffusion
 
 ## Extra features
 - Fixes issue https://github.com/gradio-app/gradio/issues/2260 and https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/160
-- Uses localtunnel for sharing
-- You can install all supported models with two clicks
+- One-click model installations
 
 ## Contributing
 If possible, perhaps there is a better way to get the NovelAI files. I currently have it self hosted but would prefer it somewhere safer than a test server that may crash at any time.
