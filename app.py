@@ -1,6 +1,6 @@
 import gradio as gr
-!npm install -g localtunnel
-!pip3 install triton
+npm install -g localtunnel
+pip3 install triton
 vae_args = ""
  
 root_dir = "/content"
@@ -8,19 +8,19 @@ root_dir = "/content"
 %cd {root_dir}
 
 def get_hypernetworks():
-  !mkdir -p {root_dir}/stable-diffusion-webui/models/hypernetworks
+  mkdir -p {root_dir}/stable-diffusion-webui/models/hypernetworks
   hypernetworks = ['anime_2.pt', 'anime.pt', 'anime_3.pt', 'furry_2.pt', 'furry_3.pt', 'furry_protogen.pt', 'furry_transformation.pt', 'furry_scalie.pt', 'pony.pt', 'aini.pt', 'furry.pt', 'furry_kemono.pt']
   for network in hypernetworks:
-    !wget -c https://huggingface.co/acheong08/secretAI/resolve/main/stableckpt/modules/modules/{network} -O {root_dir}/stable-diffusion-webui/models/hypernetworks/{network}
+    wget -c https://huggingface.co/acheong08/secretAI/resolve/main/stableckpt/modules/modules/{network} -O {root_dir}/stable-diffusion-webui/models/hypernetworks/{network}
 
 def custom_model(url, checkpoint_name):
   user_token = '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'
   user_header = f"\"Authorization: Bearer {user_token}\""
-  !wget -c --header={user_header} {url} -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/{checkpoint_name}.ckpt
+  wget -c --header={user_header} {url} -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/{checkpoint_name}.ckpt
 
 def install_deps():
   %cd {root_dir}
-  !git clone https://github.com/acheong08/stable-diffusion-webui
+  git clone https://github.com/acheong08/stable-diffusion-webui
   #@markdown Choose the models you want
   use_hypernetworks = True #@param {'type':'boolean'}
   NovelAI = True #@param {'type':'boolean'}
@@ -45,7 +45,7 @@ def install_deps():
     get_hypernetworks()
     
   %cd {root_dir}/stable-diffusion-webui/extensions
-  !git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser
+  git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser
   %cd {root_dir}
 
 def install_xformers():
@@ -78,10 +78,10 @@ def run_webui():
   animeVae = True #@param {'type':'boolean'}
   SDVae = False #@param {'type':'boolean'}
   if animeVae:
-    !wget -c https://huggingface.co/acheong08/secretAI/resolve/main/stableckpt/animevae.pt -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/novelAI.vae.pt
+    wget -c https://huggingface.co/acheong08/secretAI/resolve/main/stableckpt/animevae.pt -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/novelAI.vae.pt
     vae_args = "--vae-path " + root_dir + "/stable-diffusion-webui/models/Stable-diffusion/novelAI.vae.pt"
   if SDVae:
-    !wget -c https://huggingface.co/stabilityai/sd-vae-ft-mse/resolve/main/diffusion_pytorch_model.bin -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/sd-v1-5.vae.pt
+    wget -c https://huggingface.co/stabilityai/sd-vae-ft-mse/resolve/main/diffusion_pytorch_model.bin -O {root_dir}/stable-diffusion-webui/models/Stable-diffusion/sd-v1-5.vae.pt
     vae_args = "--vae-path " + root_dir + "/stable-diffusion-webui/models/Stable-diffusion/sd-v1-5.vae.pt"
 
   %cd {root_dir}/stable-diffusion-webui/
