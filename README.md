@@ -10,5 +10,5 @@ The instructions are on the Colab.
 ## Current flaws: (Open to pull requests for fixes)
 - Xformers take too long to install. Currently disabled
 - Google Colab has a 12 hours per day limit for free users 
-- Gradio has a 24 hour limit
+- Gradio has a 24 hours per instance limit
 - I'm sleepy
