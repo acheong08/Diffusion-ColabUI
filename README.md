@@ -9,6 +9,7 @@ The instructions are on the Colab.
 [![Star History Chart](https://api.star-history.com/svg?repos=acheong08/Diffusion-ColabUI&type=Date)](https://star-history.com/#acheong08/Diffusion-ColabUI&Date)
 
 # Current flaws: (Open to pull requests for fixes)
+- Add new models (Open a pull request or request it in issues)
 - Xformers take too long to install. Currently disabled
 - Google Colab has a 12 hours per day limit for free users 
 - Gradio has a 24 hours per instance limit
