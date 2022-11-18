@@ -3,7 +3,7 @@ Fully functional Colab based on AUTOMATIC1111/stable-diffusion-webui with the le
 
 [![link](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PvNyEWIhDU_D-i15DzpPjqDQkbYv_6Hu?usp=sharing)
 
-Share your generations in our [mastodon server](https://social.duti.tech/) - (Credits: @god -- I am not the Admin)
+Share your generations in our [mastodon server](https://social.duti.tech/) - (This is hosted by a third party. I am not associated with the instance in any way.)
 
 The instructions are on the Colab.
 
