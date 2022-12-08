@@ -1,7 +1,7 @@
 # Diffusion WebUI Colab
 The most simplistic Colab with most models included by default. Custom models can be added easily. Stable Diffusion 2.0 in testing phase.
 
-[![link](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PvNyEWIhDU_D-i15DzpPjqDQkbYv_6Hu?usp=sharing)
+[![link](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/acheong08/Diffusion-ColabUI/blob/main/Diffusion_WebUI.ipynb)
 
 Share your generations in our [mastodon server](https://social.duti.tech/) - (This is hosted by a third party. I am not associated with the instance in any way.)
 
