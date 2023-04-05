@@ -3,8 +3,6 @@ The most simplistic Colab with most models included by default. Custom models ca
 
 [![link](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/acheong08/Diffusion-ColabUI/blob/main/Diffusion_WebUI.ipynb)
 
-Share your generations in our [mastodon server](https://social.duti.tech/) - (This is hosted by a third party. I am not associated with the instance in any way.)
-
 The instructions are on the Colab.
 
 # Stargazers
